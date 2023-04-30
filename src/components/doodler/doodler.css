@@ -1,0 +1,8 @@
+.doodler {
+  position: absolute;
+  top: 25rem;
+  /* left: 150px; */
+  height: 80px;
+  width: 55px;
+  background-color: red;
+}
