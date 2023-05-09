@@ -1,7 +1,17 @@
 import "./doodler.css";
+import { useSelector } from "react-redux";
 
 const Doodler = () => {
-  return <div className="doodler" style={{ left: "150px" }}></div>;
+  const move = useSelector((state) => {
+    return state.reducer.move;
+  });
+  console.log(move);
+  return (
+    <div
+      className="doodler"
+      style={{ left: `${move}px`, bottom: `150px` }}
+    ></div>
+  );
 };
 
 export default Doodler;
